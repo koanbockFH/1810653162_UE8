@@ -14,6 +14,11 @@ class AuthenticationLogger
         this.filePath = filePath;
     }
 
+    /**
+     * Counts Failed Logins for the given username
+     * @param username username of User
+     * @return failed Logins in History
+     */
     int countFailedLogInByUsername(String username)
     {
         File f = new File(filePath);
@@ -43,6 +48,12 @@ class AuthenticationLogger
         return failCounter;
     }
 
+    /**
+     * Add Authentication Login Try
+     * @param username username used to login
+     * @param password password used to login
+     * @param successfulLogIn login result
+     */
     void add(String username, String password, boolean successfulLogIn)
     {
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true)))
@@ -55,6 +66,11 @@ class AuthenticationLogger
         }
     }
 
+    /**
+     * Mask Password
+     * @param password password used in login try
+     * @return masked password
+     */
     private String getMaskedPassword(String password)
     {
         StringBuilder result = new StringBuilder();

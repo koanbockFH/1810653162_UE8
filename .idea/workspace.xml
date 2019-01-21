@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc78a8d1-2552-42ab-80f0-f273fe02d9c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1810653162_UE8/at/ac/fhkufstein/Application/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1810653162_UE8/at/ac/fhkufstein/Application/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1810653162_UE8/at/ac/fhkufstein/Infrastructure/Core/Authentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1810653162_UE8/at/ac/fhkufstein/Infrastructure/Core/Authentication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/AuthenticationLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/AuthenticationLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/AuthenticationLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+            <state relative-caret-position="231">
+              <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#278#279#0" expanded="true" />
@@ -47,11 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+            <state relative-caret-position="282">
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -101,11 +107,11 @@
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Repository/RegistrationRepository.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Main.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Core/AuthenticationInput.java" />
-        <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Logger.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Application.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java" />
         <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/AuthenticationLogger.java" />
+        <option value="$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java" />
       </list>
     </option>
   </component>
@@ -166,6 +172,14 @@
               <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="1810653162_UE8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1810653162_UE8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fhkufstein" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -175,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548099568110" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548100125928" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,12 +248,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548085509803</updated>
-      <workItem from="1548085512950" duration="9119000" />
+      <workItem from="1548085512950" duration="9546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9119000" />
+    <option name="totallyTimeSpent" value="9546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -250,17 +264,17 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,27 +336,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -361,13 +358,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/AuthenticationLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+        <state relative-caret-position="231">
+          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#278#279#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Core/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/at/ac/fhkufstein/Infrastructure/Util/EncryptionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>

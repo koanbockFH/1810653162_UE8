@@ -10,6 +10,10 @@ public class EncryptionUtil
      */
     public static String shifter(String data, char shiftCount)
     {
+        if(data == null)
+        {
+            return null;
+        }
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < data.length(); i++)
         {
