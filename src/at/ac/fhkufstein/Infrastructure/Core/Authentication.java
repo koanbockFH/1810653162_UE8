@@ -11,12 +11,15 @@ public class Authentication implements IAuthentication
     private IRegistrationRepository regRepo;
     private IAuthenticationInput authInput;
     private final char encryptionKey = 2656;
+    private AuthenticationLogger Logger;
 
     public Authentication(IRegistrationRepository regRepo,
-                          IAuthenticationInput authInput)
+                          IAuthenticationInput authInput,
+                          String logFilePath)
     {
         this.regRepo = regRepo;
         this.authInput = authInput;
+        this.Logger = new AuthenticationLogger(logFilePath);
     }
 
     /**
@@ -30,8 +33,16 @@ public class Authentication implements IAuthentication
         RegistrationDto user = regRepo.getByUsername(username);
         if (user != null)
         {
+            String password = authInput.getPassword();
+
             char decryptionKey = (char) (0 - encryptionKey); //using Overflow to generate backshift key
-            return EncryptionUtil.shifter(user.getPassword(), decryptionKey).equals(authInput.getPassword());
+            boolean result = EncryptionUtil.shifter(user.getPassword(), decryptionKey).equals(password);
+            Logger.add(username, password, result);
+            if(result)
+            {
+                System.out.println("Failed Logins: " + Logger.countFailedLogInByUsername(username));
+            }
+            return result;
         }
         //Ask User if he wants to register
         if(username != null && authInput.newRegistration())
