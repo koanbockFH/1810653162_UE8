@@ -4,11 +4,13 @@ import at.ac.fhkufstein.Common.Dto.RegistrationDto;
 import at.ac.fhkufstein.Common.Core.IAuthentication;
 import at.ac.fhkufstein.Common.Core.IAuthenticationInput;
 import at.ac.fhkufstein.Common.Repository.IRegistrationRepository;
+import at.ac.fhkufstein.Infrastructure.Util.EncryptionUtil;
 
 public class Authentication implements IAuthentication
 {
     private IRegistrationRepository regRepo;
     private IAuthenticationInput authInput;
+    private final char encryptionKey = 2656;
 
     public Authentication(IRegistrationRepository regRepo,
                           IAuthenticationInput authInput)
@@ -28,7 +30,8 @@ public class Authentication implements IAuthentication
         RegistrationDto user = regRepo.getByUsername(username);
         if (user != null)
         {
-            return user.getPassword().equals(authInput.getPassword());
+            char decryptionKey = (char) (0 - encryptionKey); //using Overflow to generate backshift key
+            return EncryptionUtil.shifter(user.getPassword(), decryptionKey).equals(authInput.getPassword());
         }
         //Ask User if he wants to register
         if(username != null && authInput.newRegistration())
@@ -53,7 +56,7 @@ public class Authentication implements IAuthentication
         }
 
         //get for password
-        String password = authInput.getPassword();
+        String password = EncryptionUtil.shifter(authInput.getPassword(), encryptionKey);
 
         //either one not given = no registration possible
         if(password == null || username == null)
