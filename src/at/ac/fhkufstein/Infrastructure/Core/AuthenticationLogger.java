@@ -73,6 +73,10 @@ class AuthenticationLogger
      */
     private String getMaskedPassword(String password)
     {
+        if(password == null)
+        {
+            return "###";
+        }
         StringBuilder result = new StringBuilder();
         result.append(password, 0, 2);
         result.append("###");

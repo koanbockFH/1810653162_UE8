@@ -25,7 +25,23 @@ public class AuthenticationInput implements IAuthenticationInput
      */
     public String getPassword()
     {
-        return getRequiredData("Gib dein Passwort ein!");
+        String password;
+        while(true)
+        {
+            password = getRequiredData("Gib dein Passwort ein!");
+
+            if(password == null || password.length() > 5)
+            {
+                break;
+            }
+
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Passwort muss mind. 6 Zeichen lang sein!",
+                    "Passwort Format fehlerhaft",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
+        return password;
     }
 
     /**
